@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffea6f; 
+            font-family: 'Playfair Display', serif;
+        }
+
+        .btn-light-purple {
+            background-color: #e2fffa; 
+            border: none;
+            color: black; 
+        }
+
+        .align-middle {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding-bottom: 40px;
+        }
+
+        .large-text {
+            font-size: 4rem; /* Ajuste o tamanho da fonte conforme necessário */
+            margin: 0; /* Remove a margem padrão do h2 */
+        }
+    </style>
+    <title>Minha biblioteca</title>
+</head>
+
+<body>
+    <header class="bg-dark">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">Minha bibliô</a>
+                <div id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="homeLink" class="nav-link text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="livrosLink" class="nav-link text-light" href="#">Livros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="adicionarLivroLink" class="nav-link text-light" href="#">Adicionar livro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="editarLivroLink" class="nav-link text-light" href="#">Editar livro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container mt-4">
+        <div class="row">
+            <!-- Coluna do texto -->
+            <div class="col-md-6 align-middle">
+                <div>
+                    <h2 class="large-text">Minha biblioteca virtual</h2>
+                    <a class="btn btn-light-purple mt-3" href="catalogo.html">Livrinhos</a>
+                </div>
+            </div>
+            <!-- Coluna da imagem -->
+            <div class="col-md-6">
+                <img src="img/biblioteca1.png" alt="uma pilha de livros com pessoas lendo" class="img-fluid" />
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
